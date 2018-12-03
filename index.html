@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JSON with jQuery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style>
+		table, th, td {
+		    border: 1px solid black;
+		    border-collapse: collapse;
+		}
+		th, td {
+		    padding: 5px;
+		    text-align: left;
+		}
+
+		th {
+		    padding: 5px;
+		    text-align: center;
+		}
+
+		.hover { background-color:yellow; }
+
+	</style>
+</head>
+<body>
+
+	<script>
+		$(document).ready(function() {
+			
+			$.ajax({
+				url: 'https://jsonplaceholder.typicode.com/todos/',
+				dataType: 'json',
+				type: 'get',
+				cache: false,
+				success: function(data) {
+					books_id = [];
+					titles = [];
+					$(data).each(function(index, value) {
+						// if(value.completed)
+							titles[index] = "<td>" + JSON.stringify(value.title) + "</td>";
+							books_id[index] = "<td>" + JSON.stringify(value.id) + "</td>";
+					    $( "#waypointsTable" ).append("<tr>" + titles[index] + books_id[index] + "</tr>");
+					});
+				}
+
+
+
+
+
+			});
+
+
+				$('#waypointsTable tr').hover(function() {
+				    $(this).addClass('hover');
+					}, function() {
+				    	$(this).removeClass('hover');
+		    	});
+		})
+
+
+
+
+
+	</script>
+	
+
+<table style="width:50%" id="waypointsTable">
+  <caption><b>Sort from JSON to table with jQuery</b></caption>
+  
+  	<tr>
+		<th>Title</th>
+	    <th>ID</th>
+	</tr>
+</table>
+
+</body>
+</html>
