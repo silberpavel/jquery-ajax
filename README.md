@@ -37,6 +37,7 @@
   }
 ]
 ```
+### HTML
 ```html
 	<table style="width:50%" id="waypointsTable">
 	<caption><b>Sort from JSON to table with jQuery</b></caption>
@@ -46,6 +47,7 @@
 		</tr>
     </table>
 ```
+### CSS
 ```css
     table, th, td {
         border: 1px solid black;
