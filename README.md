@@ -21,8 +21,7 @@
         });
 ```
 ### JSON           
-// https://jsonplaceholder.typicode.com/todos/
-
+```json
 [
   {
     "userId": 1,
@@ -35,6 +34,6 @@
     "id": 2,
     "title": "quis ut nam facilis et officia qui",
     "completed": true
-  },
-  ...
+  }
 ]
+```
