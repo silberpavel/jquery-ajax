@@ -1,10 +1,7 @@
 # jQuery
 
 ## Dynamic data to table with ajax request
-
-`
-		$(document).ready(function() {
-			
+		$(document).ready(function() {	
 			$.ajax({
 				url: 'https://jsonplaceholder.typicode.com/todos/',
 				dataType: 'json',
@@ -20,6 +17,4 @@
 					    $( "#waypointsTable" ).append("<tr>" + titles[index] + books_id[index] + "</tr>");
 					});
 				}
-
 			});
-`
