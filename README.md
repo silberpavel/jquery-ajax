@@ -1,6 +1,7 @@
 # jQuery
 
 ## Dynamic adding to table with ajax request (JSON format)
+```js
     $(document).ready(function() {	
         $.ajax({
             url: 'https://jsonplaceholder.typicode.com/todos/',
@@ -18,7 +19,7 @@
                 });
             }
         });
-
+```
 ### JSON           
 // https://jsonplaceholder.typicode.com/todos/
 
