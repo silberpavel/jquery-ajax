@@ -61,5 +61,5 @@
         padding: 5px;
         text-align: center;
     }
-    tr:hover { background-color:yellow; }
+    tr:hover { background-color:yellow; }   /* row hover only with CSS*/
 ```
