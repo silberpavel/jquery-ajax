@@ -37,3 +37,27 @@
   }
 ]
 ```
+```html
+	<table style="width:50%" id="waypointsTable">
+	<caption><b>Sort from JSON to table with jQuery</b></caption>
+		<tr>
+			<th>Title</th>
+			<th>ID</th>
+		</tr>
+    </table>
+```
+```css
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 5px;
+        text-align: left;
+    }
+    th {
+        padding: 5px;
+        text-align: center;
+    }
+    tr:hover { background-color:yellow; }
+```
